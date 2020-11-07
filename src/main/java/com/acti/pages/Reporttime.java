@@ -1,5 +1,7 @@
 package com.acti.pages;
 
-public class Reporttime {
+import com.acti.base.DriverScript;
+
+public class Reporttime extends DriverScript{
 
 }
