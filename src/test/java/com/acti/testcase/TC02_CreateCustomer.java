@@ -11,7 +11,11 @@ public class TC02_CreateCustomer extends BaseTest {
 		enterTimePage.clickTaskMenu();		
 		taskpg.clickAddNewButton();
 		taskpg.clickNewCustomerItem();
-		taskpg.enterCustomerName("TestRaj");
-		
+		taskpg.enterCustomerName("TestRaj1");
+		taskpg.enterCustDesc("The new Employee");
+		taskpg.selectCustomer();
+		taskpg.selectGalopt();
+		taskpg.createCustomerButton();
+		System.out.println(taskpg.gettoastmessage());
 }
 }

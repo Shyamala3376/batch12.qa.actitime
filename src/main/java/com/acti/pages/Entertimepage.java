@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.acti.base.DriverScript;
+import com.acti.util.Generic;
 
 public class Entertimepage extends DriverScript {
 	@FindBy(xpath="//a[@class='content tasks']") WebElement taskMenu;
@@ -23,6 +24,7 @@ public class Entertimepage extends DriverScript {
 	public void clickTaskMenu()
 	{
 		taskMenu.click();
+		Generic.fn_sleep();
 	}
 
 }

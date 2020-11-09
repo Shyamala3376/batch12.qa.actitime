@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.acti.testcase.TC02_CreateCustomer">
+      <class name="com.acti.testcase.TC01_logintest">
         <methods>
-          <include name="Precondition"/>
-          <include name="testCreateCustomer"/>
-          <include name="Postcondition"/>
+          <include name="testloginformultiuser"/>
         </methods>
-      </class> <!-- com.acti.testcase.TC02_CreateCustomer -->
+      </class> <!-- com.acti.testcase.TC01_logintest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

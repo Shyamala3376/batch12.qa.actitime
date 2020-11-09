@@ -1,25 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13462" started-at="2020-11-08T12:46:17Z" finished-at="2020-11-08T12:46:30Z">
+  <suite name="Default suite" duration-ms="18" started-at="2020-11-09T02:02:59Z" finished-at="2020-11-09T02:02:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13462" started-at="2020-11-08T12:46:17Z" finished-at="2020-11-08T12:46:30Z">
-      <class name="com.acti.testcase.TC02_CreateCustomer">
-        <test-method status="PASS" signature="Precondition()[pri:0, instance:com.acti.testcase.TC02_CreateCustomer@66a3ffec]" name="Precondition" is-config="true" duration-ms="7956" started-at="2020-11-08T07:46:17Z" finished-at="2020-11-08T07:46:24Z">
+    <test name="Default test" duration-ms="18" started-at="2020-11-09T02:02:59Z" finished-at="2020-11-09T02:02:59Z">
+      <class name="com.acti.testcase.TC01_logintest">
+        <test-method status="SKIP" signature="testloginformultiuser(java.lang.String, java.lang.String)[pri:0, instance:com.acti.testcase.TC01_logintest@77caeb3e]" name="testloginformultiuser" duration-ms="0" started-at="2020-11-08T21:02:59Z" data-provider="actidata" finished-at="2020-11-08T21:02:59Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:110)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:436)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1253)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: java.lang.NullPointerException
+	at com.acti.util.Excellib.getRowCount(Excellib.java:25)
+	at com.acti.testcase.TC01_logintest.testData(TC01_logintest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:51)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:41)
+	... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Precondition -->
-        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:com.acti.testcase.TC02_CreateCustomer@66a3ffec]" name="testCreateCustomer" duration-ms="4187" started-at="2020-11-08T07:46:24Z" finished-at="2020-11-08T07:46:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateCustomer -->
-        <test-method status="PASS" signature="Postcondition()[pri:0, instance:com.acti.testcase.TC02_CreateCustomer@66a3ffec]" name="Postcondition" is-config="true" duration-ms="1304" started-at="2020-11-08T07:46:29Z" finished-at="2020-11-08T07:46:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Postcondition -->
-      </class> <!-- com.acti.testcase.TC02_CreateCustomer -->
+        </test-method> <!-- testloginformultiuser -->
+      </class> <!-- com.acti.testcase.TC01_logintest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
